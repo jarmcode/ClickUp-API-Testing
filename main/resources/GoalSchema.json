@@ -1,0 +1,100 @@
+{
+	"definitions": {},
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"goal"
+	],
+	"properties": {
+		"goal": {
+			"$id": "#root/goal", 
+			"title": "Goal", 
+			"type": "object",
+			"required": [
+				"id",
+				"name",
+				"team_id",
+				"date_created",
+				"start_date",
+				"due_date",
+				"description",
+				"private",
+				"archived",
+				"creator",
+				"color",
+				"pretty_id",
+				"multiple_owners",
+				"folder_id",
+				"members",
+				"owners",
+				"key_results",
+				"percent_completed",
+				"history",
+				"pretty_url"
+			],
+			"properties": {
+				"id": {				
+					"type": "string"
+				},
+				"name": {					 
+					"type": "string"
+				},
+				"team_id": {				
+					"type": "string"
+				},
+				"date_created": {					 
+					"type": "string"
+				},
+				"start_date": {					
+					"type": "null"
+				},
+				"due_date": {					
+					"type": "string"
+				},
+				"description": {					
+					"type": "string"
+				},
+				"private": {
+					"type": "boolean"
+				},
+				"archived": {					
+					"type": "boolean"
+				},
+				"creator": {				
+					"type": "integer"
+				},
+				"color": {				
+					"type": "string"
+				},
+				"pretty_id": {					
+					"type": "string"
+				},
+				"multiple_owners": {					
+					"type": "boolean"
+				},
+				"folder_id": {				
+					"type": "null"
+				},
+				"members": {
+					"type": "array"
+				},
+				"owners": {
+					"type": "array"
+				},
+				"key_results": {
+					"type": "array"
+				},
+				"percent_completed": {
+					"type": "integer"
+				},
+				"history": { 
+					"type": "array"
+				},
+				"pretty_url": {
+					"type": "string"
+				}
+			}
+		}
+
+	}
+}

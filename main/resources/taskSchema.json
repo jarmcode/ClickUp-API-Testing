@@ -1,0 +1,290 @@
+{
+	"type": "object",
+	"properties": {
+	  "id": {
+		"type": "string"
+	  },
+	  "custom_id": {
+		"type": "null"
+	  },
+	  "name": {
+		"type": "string"
+	  },
+	  "text_content": {
+		"type": "string"
+	  },
+	  "description": {
+		"type": "string"
+	  },
+	  "status": {
+		"type": "object",
+		"properties": {
+		  "id": {
+			"type": "string"
+		  },
+		  "status": {
+			"type": "string"
+		  },
+		  "color": {
+			"type": "string"
+		  },
+		  "orderindex": {
+			"type": "integer"
+		  },
+		  "type": {
+			"type": "string"
+		  }
+		},
+		"required": [
+		  "id",
+		  "status",
+		  "color",
+		  "orderindex",
+		  "type"
+		]
+	  },
+	  "orderindex": {
+		"type": "string"
+	  },
+	  "date_created": {
+		"type": "string"
+	  },
+	  "date_updated": {
+		"type": "string"
+	  },
+	  "date_closed": {
+		"type": "null"
+	  },
+	  "archived": {
+		"type": "boolean"
+	  },
+	  "creator": {
+		"type": "object",
+		"properties": {
+		  "id": {
+			"type": "integer"
+		  },
+		  "username": {
+			"type": "string"
+		  },
+		  "color": {
+			"type": "string"
+		  },
+		  "email": {
+			"type": "string"
+		  },
+		  "profilePicture": {
+			"type": "null"
+		  }
+		},
+		"required": [
+		  "id",
+		  "username",
+		  "color",
+		  "email",
+		  "profilePicture"
+		]
+	  },
+	  "assignees": {
+		"type": "array",
+		"items": {}
+	  },
+	  "watchers": {
+		"type": "array",
+		"items": [
+		  {
+			"type": "object",
+			"properties": {
+			  "id": {
+				"type": "integer"
+			  },
+			  "username": {
+				"type": "string"
+			  },
+			  "color": {
+				"type": "string"
+			  },
+			  "initials": {
+				"type": "string"
+			  },
+			  "email": {
+				"type": "string"
+			  },
+			  "profilePicture": {
+				"type": "null"
+			  }
+			},
+			"required": [
+			  "id",
+			  "username",
+			  "color",
+			  "initials",
+			  "email",
+			  "profilePicture"
+			]
+		  }
+		]
+	  },
+	  "checklists": {
+		"type": "array",
+		"items": {}
+	  },
+	  "tags": {
+		"type": "array",
+		"items": {}
+	  },
+	  "parent": {
+		"type": "null"
+	  },
+	  "priority": {
+		"type": "null"
+	  },
+	  "due_date": {
+		"type": "string"
+	  },
+	  "start_date": {
+		"type": "null"
+	  },
+	  "points": {
+		"type": "null"
+	  },
+	  "time_estimate": {
+		"type": "null"
+	  },
+	  "time_spent": {
+		"type": "integer"
+	  },
+	  "custom_fields": {
+		"type": "array",
+		"items": {}
+	  },
+	  "dependencies": {
+		"type": "array",
+		"items": {}
+	  },
+	  "linked_tasks": {
+		"type": "array",
+		"items": {}
+	  },
+	  "team_id": {
+		"type": "string"
+	  },
+	  "url": {
+		"type": "string"
+	  },
+	  "permission_level": {
+		"type": "string"
+	  },
+	  "list": {
+		"type": "object",
+		"properties": {
+		  "id": {
+			"type": "string"
+		  },
+		  "name": {
+			"type": "string"
+		  },
+		  "access": {
+			"type": "boolean"
+		  }
+		},
+		"required": [
+		  "id",
+		  "name",
+		  "access"
+		]
+	  },
+	  "project": {
+		"type": "object",
+		"properties": {
+		  "id": {
+			"type": "string"
+		  },
+		  "name": {
+			"type": "string"
+		  },
+		  "hidden": {
+			"type": "boolean"
+		  },
+		  "access": {
+			"type": "boolean"
+		  }
+		},
+		"required": [
+		  "id",
+		  "name",
+		  "hidden",
+		  "access"
+		]
+	  },
+	  "folder": {
+		"type": "object",
+		"properties": {
+		  "id": {
+			"type": "string"
+		  },
+		  "name": {
+			"type": "string"
+		  },
+		  "hidden": {
+			"type": "boolean"
+		  },
+		  "access": {
+			"type": "boolean"
+		  }
+		},
+		"required": [
+		  "id",
+		  "name",
+		  "hidden",
+		  "access"
+		]
+	  },
+	  "space": {
+		"type": "object",
+		"properties": {
+		  "id": {
+			"type": "string"
+		  }
+		},
+		"required": [
+		  "id"
+		]
+	  }
+	},
+	"required": [
+	  "id",
+	  "custom_id",
+	  "name",
+	  "text_content",
+	  "description",
+	  "status",
+	  "orderindex",
+	  "date_created",
+	  "date_updated",
+	  "date_closed",
+	  "archived",
+	  "creator",
+	  "assignees",
+	  "watchers",
+	  "checklists",
+	  "tags",
+	  "parent",
+	  "priority",
+	  "due_date",
+	  "start_date",
+	  "points",
+	  "time_estimate",
+	  "time_spent",
+	  "custom_fields",
+	  "dependencies",
+	  "linked_tasks",
+	  "team_id",
+	  "url",
+	  "permission_level",
+	  "list",
+	  "project",
+	  "folder",
+	  "space"
+	]
+  }
